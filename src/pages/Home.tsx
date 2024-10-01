@@ -4,6 +4,11 @@ import Nav from '../components/nav';
 import Hero from '../components/hero';
 import Couple from '../components/couple';
 import Event from '../components/event';
+import Love from '../components/lovestory';
+import Proposed from '../components/proposed';
+import Gallery from '../components/gallery';
+
+
 const Home = ():JSX.Element => {
 
     return (
@@ -27,7 +32,21 @@ const Home = ():JSX.Element => {
                 <Event />
 
             {/* end of event */}
-            <Couple />
+            
+
+            {/* Love Story */}
+            <Love />
+
+            {/* end of love story */}
+
+            {/* proposed */}
+            <Proposed />
+
+            {/* Gallery */}
+
+            <Gallery />
+
+
             
         </>
     );
