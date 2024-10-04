@@ -17,15 +17,15 @@ const Event = ():JSX.Element => {
                 
                 }}>
 
-                <h1 className="text-center font-bold text-3xl text-white"> THE WEDDING EVENT</h1>
-              <p className="text-lg font-medium text-center text-white italic">If you have only one smile in you give it to the people you love.</p>
+                <h1 className="text-center font-bold text-2xl md:text-3xl text-white"> THE WEDDING EVENT</h1>
+              <p className=" text-base md:text-lg font-medium text-center text-white italic">If you have only one smile in you give it to the people you love.</p>
             
 
 
-                <div className="flex justify-between mt-20 space-x-8">
+                <div className="block md:flex justify-between mt-20 space-y-12 md:space-y-0 md:space-x-8">
 
-                    <div className="shadow rounded bg-white min-h-[60vh] py-8 px-10">
-                        <h2 className="font-bold font-sans text-[#723526] text-2xl">ENGAGEMENT</h2>
+                    <div className="shadow rounded bg-white min-h-[40vh] md:min-h-[60vh] py-8 px-10">
+                        <h2 className="font-bold font-sans text-[#723526] text-xl md:text-2xl">ENGAGEMENT</h2>
                         <hr className='border-2 w-24 border-amber-500' />
 
                         <p className="text-normal py-3 text-[15px]">Lorem Ipsum is simply dummy text. The church where the wedding ceremony will take place on April 6th is St. Patrick's Church, where you'll find us most Sunday mornings.</p>
@@ -66,8 +66,8 @@ const Event = ():JSX.Element => {
 
                     {/* church service */}
 
-                    <div className="shadow rounded bg-white min-h-[60vh] py-8 px-10">
-                        <h2 className="font-bold font-sans text-[#723526] text-2xl">CHURCH SERVICE</h2>
+                    <div className="shadow rounded bg-white min-h-[40vh] md:min-h-[60vh] py-8 px-10">
+                        <h2 className="font-bold font-sans text-[#723526] text-xl md:text-2xl">CHURCH SERVICE</h2>
                         <hr className='border-2 w-24 border-amber-500' />
 
                         <p className="text-normal py-3 text-[15px]">Lorem Ipsum is simply dummy text. The church where the wedding ceremony will take place on April 6th is St. Patrick's Church, where you'll find us most Sunday mornings.</p>
@@ -109,8 +109,8 @@ const Event = ():JSX.Element => {
                 {/* reception */}
 
 
-                <div className="shadow rounded bg-white min-h-[60vh] py-8 px-10">
-                        <h2 className="font-bold font-sans text-[#723526] text-2xl">THE RECEPTION</h2>
+                <div className="shadow rounded bg-white min-h-[40vh] md:min-h-[60vh] py-8 px-10">
+                        <h2 className="font-bold font-sans text-[#723526] text-xl md:text-2xl">THE RECEPTION</h2>
                         <hr className='border-2 w-24 border-amber-500' />
 
                         <p className="text-normal py-3 text-[15px]">Lorem Ipsum is simply dummy text. The church where the wedding ceremony will take place on April 6th is St. Patrick's Church, where you'll find us most Sunday mornings.</p>

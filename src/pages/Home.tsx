@@ -7,6 +7,7 @@ import Event from '../components/event';
 import Love from '../components/lovestory';
 import Proposed from '../components/proposed';
 import Gallery from '../components/gallery';
+import Footer from '../components/footer';
 
 
 const Home = ():JSX.Element => {
@@ -45,6 +46,10 @@ const Home = ():JSX.Element => {
             {/* Gallery */}
 
             <Gallery />
+
+            {/* footer */}
+
+            <Footer />
 
 
             

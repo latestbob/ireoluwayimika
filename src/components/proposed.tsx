@@ -6,13 +6,13 @@ const Proposed = ():JSX.Element => {
 
     return (
         <>
-            <section className="w-full min-h-screen mt-10 bg-no-repeat py-20 px-24 "
+            <section className="w-full min-h-screen mt-10 bg-no-repeat py-20 px-10 md:px-24 "
             style={{ 
                 backgroundImage: `url(${events})`,
                 //  backgroundPosition:'right',
                 // backgroundImage: `url(${backgroundImage})`,
-                backgroundPosition: 'bottom', // Move to top-right corner
-                backgroundSize: 'contain', // Optional: Adjust size if needed
+                backgroundPosition: 'center center', // Move to top-right corner
+                backgroundSize: 'cover', // Optional: Adjust size if needed
                 backgroundAttachment:'fixed',
                
                 
@@ -24,11 +24,11 @@ const Proposed = ():JSX.Element => {
 
                 <div className="flex justify-between mt-20 space-x-8">
 
-                    <div className=" overflow-hidden shadow rounded w-[40%] bg-white min-h-[60vh]">
+                    <div className=" overflow-hidden shadow rounded w-[90%] md:w-[45%] bg-white min-h-[60vh]">
                         <img src={ment} className='w-full h-14 ' alt="" />
                         
                         <div className="px-10 py-8">
-                        <h2 className="font-bold font-sans text-[#723526] text-2xl">How He Proposed</h2>
+                        <h2 className="font-bold font-sans text-[#723526] text-xl md:text-2xl">How He Proposed</h2>
                         <hr className='border-2 w-24 border-amber-500' />
 
                         <p className="text-normal py-3 text-base">He proposed on a Scrabble board. It's a game we've always loved.</p>

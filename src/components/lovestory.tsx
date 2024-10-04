@@ -31,8 +31,8 @@ const LoveStory = ():JSX.Element => {
     return (
         <>
               <section className='bg-white w-full min-h-[80vh] py-16 px-10'>
-            <h1 className="text-center text-[#723526] text-3xl font-bold mt-10">Our Love Story</h1>
-            <p className="text-lg text-center font-base px-5 mt-3">There is only one happiness in this life, to love and be loved.</p>
+            <h1 className="text-center text-[#723526] text-2xl md:text-3xl font-bold mt-10">Our Love Story</h1>
+            <p className="text-base md:text-lg text-center font-base px-5 mt-3">There is only one happiness in this life, to love and be loved.</p>
 
 
                 {/*  */}
