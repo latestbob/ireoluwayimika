@@ -31,22 +31,18 @@ const Proposed = ():JSX.Element => {
                         <h2 className="font-bold font-sans text-[#723526] text-xl md:text-2xl">How He Proposed</h2>
                         <hr className='border-2 w-24 border-amber-500' />
 
-                        <p className="text-normal py-3 text-base">He proposed on a Scrabble board. It's a game we've always loved.</p>
+                        <p className="text-normal py-3 text-base">He approached me with certainty and boldness, knowing exactly what he wanted and unafraid to ask for it. He had hinted at his intentions throughout our early conversations—Adeyinka is not one to hide his heart. His plan was clear: he would go on a 3-day personal retreat, and when he returned, he would ask for my hand. So, I waited.</p>
 
 
-                        <p className="text-normal py-3 text-base">He glued the letters on, spelling "MILEA WILL YOU MARRY ME", and then asked if I wanted to play the game after dinner. He had me set up the game, and of course when I opened the board, I saw the letters spelling out the proposal!</p>
+                        <p className="text-normal py-3 text-base">During that time, I searched my spirit deeply and had my answer ready. On April 1st, at midnight, he sent three versions of a beautifully detailed message to every platform we had ever communicated on. It was the sweetest gesture, and my heart leapt as I soaked in every word. Adeyinka's way with words is incomparable. The combination of my conviction and his intentionality won me over. <b><i>I said YES.</i></b></p>
                         
 
-                        <p className="text-normal py-3 text-base">I was so awestruck, confused and surprised at the same time as he stood there ring in hand. I framed the board and have it hanging in our home.</p>
+                        <p className="text-normal py-3 text-base">Later, he “put a ring on it” and I got to hear a fourth version of the sweetest words from the sweetest man.</p>
 
                     
 
 
-                        <br />
-
-                        <p className="text-xl font-medium italic">"Yes! Yes of course! Yes!"
-
-</p>
+           
                         
                         </div>
                     </div>

@@ -5,7 +5,7 @@ const Event = ():JSX.Element => {
 
     return (
         <>
-            <section className="w-full min-h-screen mt-10 bg-no-repeat py-20 px-10 "
+            <section id='event' className="w-full min-h-screen mt-10 bg-no-repeat py-20 px-10 "
             style={{ 
                 backgroundImage: `url(${events})`,
                 //  backgroundPosition:'right',
@@ -24,11 +24,12 @@ const Event = ():JSX.Element => {
 
                 <div className="block md:flex justify-between mt-20 space-y-12 md:space-y-0 md:space-x-8">
 
-                    <div className="shadow rounded bg-white min-h-[40vh] md:min-h-[60vh] py-8 px-10">
+                    <div className="md:w-[30%]  shadow rounded bg-white min-h-[40vh] md:min-h-[60vh] py-8 px-10">
                         <h2 className="font-bold font-sans text-[#723526] text-xl md:text-2xl">ENGAGEMENT</h2>
                         <hr className='border-2 w-24 border-amber-500' />
 
-                        <p className="text-normal py-3 text-[15px]">Lorem Ipsum is simply dummy text. The church where the wedding ceremony will take place on April 6th is St. Patrick's Church, where you'll find us most Sunday mornings.</p>
+                        <p className="text-normal py-3 text-[15px]">The enagagement ceremony will take place on December 21st at Youth Center,
+                        Redemption City of God.</p>
 
                         
 
@@ -66,11 +67,12 @@ const Event = ():JSX.Element => {
 
                     {/* church service */}
 
-                    <div className="shadow rounded bg-white min-h-[40vh] md:min-h-[60vh] py-8 px-10">
+                    <div className="md:w-[30%]  shadow rounded bg-white min-h-[40vh] md:min-h-[60vh] py-8 px-10">
                         <h2 className="font-bold font-sans text-[#723526] text-xl md:text-2xl">CHURCH SERVICE</h2>
                         <hr className='border-2 w-24 border-amber-500' />
 
-                        <p className="text-normal py-3 text-[15px]">Lorem Ipsum is simply dummy text. The church where the wedding ceremony will take place on April 6th is St. Patrick's Church, where you'll find us most Sunday mornings.</p>
+                        <p className="text-normal py-3 text-[15px]">Church Service follows after engagement ceremony at Messiah's Praise Sanctuary(MPS)
+                        Akindayomi Road, Redemption City</p>
 
                         
 
@@ -109,11 +111,11 @@ const Event = ():JSX.Element => {
                 {/* reception */}
 
 
-                <div className="shadow rounded bg-white min-h-[40vh] md:min-h-[60vh] py-8 px-10">
+                <div className="md:w-[30%] shadow rounded bg-white min-h-[40vh] md:min-h-[60vh] py-8 px-10">
                         <h2 className="font-bold font-sans text-[#723526] text-xl md:text-2xl">THE RECEPTION</h2>
                         <hr className='border-2 w-24 border-amber-500' />
 
-                        <p className="text-normal py-3 text-[15px]">Lorem Ipsum is simply dummy text. The church where the wedding ceremony will take place on April 6th is St. Patrick's Church, where you'll find us most Sunday mornings.</p>
+                        <p className="text-normal py-3 text-[15px]">The reception follows immediately after the church service. It will be a time of celebration, joy, and fellowship as we continue to share in the couple's special day.</p>
 
                        
 

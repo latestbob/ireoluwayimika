@@ -8,7 +8,7 @@ const Hero = ():JSX.Element => {
     return (
         <>
 
-            <section className="bg-no-repeat h-screen mt-20 flex items-center px-10 md:px-24 backdrop-blur-md"  
+            <section id="couples" className="bg-no-repeat h-screen mt-20 flex items-center px-10 md:px-24 "  
             style={{ 
                 backgroundImage: `url(${heroimage})`,
                 //  backgroundPosition:'right',

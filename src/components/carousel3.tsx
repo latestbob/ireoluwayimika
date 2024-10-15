@@ -13,13 +13,15 @@ const Carousel3 = ():JSX.Element => {
                 </div>
 
                 <div className="px-3 py-4 w-full md:w-2/5">
-                    <h3 className="text-xl md:text-2xl font-semibold text py-2 mt-14 md:mt-0">We Decide To Meet</h3>
+                    <h3 className="text-xl md:text-2xl font-semibold text py-2 mt-14 md:mt-0">When We Met</h3>
                     <hr className='border-2 w-24 border-amber-500' />
 
-                    <p className="text-justify mt-5">Milea and Dilan met the modern way: by swiping right on Tinder in 2021. Their first date was a bit of a disaster-it started pouring while they were enjoying their outdoor dinner, Dilan fell into a mud puddle, and they had to wait over an hour for a subway train. However, their second date went much better and they've been together ever since.</p>
+                    <p className="text-justify mt-5">That Sunday morning, I took my time getting dressed. It was my first time meeting the man who had made me laugh the hardest and longest, so I wanted to look my best. Why? I wasn’t sure, but something about him made me want to try harder.</p>
 
                         <br />
-                    <p className="text-justify">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                    <p className="text-justify">When I saw him for the first time, I couldn’t help but smile from ear to ear. Unsure of how to react, I asked for a hug. He smiled and obliged.
+We had a wonderful church service and spent the rest of the day together. It was an amazing day. 
+As I drove home that evening, I knew I needed to have a serious talk with my Heavenly Father.</p>
                 </div>
 
             </div>

@@ -8,6 +8,7 @@ import Love from '../components/lovestory';
 import Proposed from '../components/proposed';
 import Gallery from '../components/gallery';
 import Footer from '../components/footer';
+import WishList from '../components/wishlist';
 
 
 const Home = ():JSX.Element => {
@@ -43,9 +44,14 @@ const Home = ():JSX.Element => {
             {/* proposed */}
             <Proposed />
 
+
+            <WishList />
             {/* Gallery */}
 
             <Gallery />
+
+
+          
 
             {/* footer */}
 
