@@ -6,7 +6,7 @@ const Proposed = ():JSX.Element => {
 
     return (
         <>
-            <section className="w-full min-h-screen mt-10 bg-no-repeat py-20 px-10 md:px-24 "
+            <section className="w-full min-h-screen mt-10 bg-no-repeat py-10 md:py-20 px-5 md:px-24 "
             style={{ 
                 backgroundImage: `url(${events})`,
                 //  backgroundPosition:'right',
@@ -24,7 +24,7 @@ const Proposed = ():JSX.Element => {
 
                 <div className="flex justify-between mt-20 space-x-8">
 
-                    <div className=" overflow-hidden shadow rounded w-[90%] md:w-[45%] bg-white min-h-[60vh]">
+                    <div className=" overflow-hidden shadow rounded w-[95%] md:w-[45%] bg-white min-h-[60vh]">
                         <img src={ment} className='w-full h-14 ' alt="" />
                         
                         <div className="px-10 py-8">

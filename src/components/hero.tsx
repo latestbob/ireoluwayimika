@@ -1,5 +1,5 @@
 import React from 'react';
-import heroimage from '../assets/hero.png'
+import heroimage from '../assets/bg.png'
 import ment from '../assets/ment.png'
 import herosecondary from '../assets/heros.png'
 
@@ -8,7 +8,7 @@ const Hero = ():JSX.Element => {
     return (
         <>
 
-            <section id="couples" className="bg-no-repeat h-screen mt-20 flex items-center px-10 md:px-24 "  
+            <section id="couples" className="bg-no-repeat h-screen mt-20 flex items-center px-5 md:px-24 "  
             style={{ 
                 backgroundImage: `url(${heroimage})`,
                 //  backgroundPosition:'right',

@@ -30,8 +30,8 @@ const LoveStory = ():JSX.Element => {
 
     return (
         <>
-              <section id='love-story' className='bg-white w-full min-h-[80vh] py-16 px-10'>
-            <h1 className="text-center text-[#723526] text-2xl md:text-3xl font-bold mt-10">Our Love Story</h1>
+              <section id='love-story' className='bg-white w-full min-h-[80vh] py-16 px-5'>
+            <h1 className="text-center text-[#723526] text-xl md:text-3xl font-bold mt-10">Our Love Story</h1>
             <p className="text-base md:text-lg text-center font-base px-5 mt-3">There is only one happiness in this life, to love and be loved.</p>
 
 
@@ -59,7 +59,7 @@ const LoveStory = ():JSX.Element => {
       {/* Previous Button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-[#723526] px-4 py-2 rounded-full"
+        className="absolute md:top-1/2 left-4 transform -translate-y-1/2 text-white bg-[#723526] px-4 py-2 rounded-full"
       >
         Prev
       </button>
@@ -67,7 +67,7 @@ const LoveStory = ():JSX.Element => {
       {/* Next Button */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-[#723526] px-4 py-2 rounded-full"
+        className="absolute md:top-1/2 right-4 transform -translate-y-1/2 text-white bg-[#723526] px-4 py-2 rounded-full"
       >
         Next
       </button>

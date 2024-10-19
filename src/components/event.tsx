@@ -1,11 +1,11 @@
 import React from 'react';
-import events from '../assets/eventtwo.png'
+import events from '../assets/event.png'
 
 const Event = ():JSX.Element => {
 
     return (
         <>
-            <section id='event' className="w-full min-h-screen mt-10 bg-no-repeat py-20 px-10 "
+            <section id='event' className="w-full min-h-screen mt-10 bg-no-repeat py-20 px-5 "
             style={{ 
                 backgroundImage: `url(${events})`,
                 //  backgroundPosition:'right',
@@ -17,7 +17,7 @@ const Event = ():JSX.Element => {
                 
                 }}>
 
-                <h1 className="text-center font-bold text-2xl md:text-3xl text-white"> THE WEDDING EVENT</h1>
+                <h1 className="text-center font-bold text-xl md:text-3xl text-white"> THE WEDDING EVENT</h1>
               <p className=" text-base md:text-lg font-medium text-center text-white italic">If you have only one smile in you give it to the people you love.</p>
             
 

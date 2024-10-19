@@ -27,21 +27,38 @@ async function handleSubmit(e:React.FormEvent){
   setLoading(true)
 
    try {
-     await addRsvp(name, email, phone, event, additional);
+     const result = await addRsvp(name, email, phone, event, additional);
 
      setLoading(false)
-     navigate('/');
-     toast.success('RSVP received! See you at The ÌrèolùwàYimika Experience!', {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-      transition: Bounce,
-      });
+
+     if (result === 'Email already exists') {
+      toast.error('Rsvp already submitted with your email', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+        });
+      // You can handle this case further, such as showing a warning message to the user
+  } else if (result === 'RSVP added successfully') {
+    navigate('/');
+    toast.success('RSVP received! See you at The ÌrèolùwàYimika Experience!', {
+     position: "top-right",
+     autoClose: 5000,
+     hideProgressBar: false,
+     closeOnClick: true,
+     pauseOnHover: true,
+     draggable: true,
+     progress: undefined,
+     theme: "colored",
+     transition: Bounce,
+     });
+  } 
+     
 
 
    } catch (err:any) {
@@ -62,10 +79,10 @@ async function handleSubmit(e:React.FormEvent){
 </div>
 
 <div className= "px-10 w-full md:w-1/2">
-  <h1 className="text-4xl font-semibold mb-2">Come Celebrate with Us!
+  <h1 className="text-2xl text-center md:text-left md:text-4xl font-semibold mb-2">Come Celebrate with Us!
   </h1>
 
-  <p className="mb-4">Every love story is beautiful, but ours is my favorite.</p>
+  <p className="mb-4 text-center md:text-left">Every love story is beautiful, but ours is my favorite.</p>
  
 
   <form onSubmit={handleSubmit} className="space-y-4">
@@ -95,7 +112,7 @@ async function handleSubmit(e:React.FormEvent){
   <label className=" text-gray-800 font-bold text-base">Phone</label>
     <input type="tel"onChange={function(e:React.ChangeEvent<HTMLInputElement>){
         setPhone(e.target.value);
-    }}   className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"autoComplete='off'required />
+    }} minLength={11}  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"autoComplete='off'required />
   </div>
 
   <div className="w-1/2">
@@ -103,7 +120,7 @@ async function handleSubmit(e:React.FormEvent){
     <label className=" text-gray-800  font-bold text-base">Events</label>
     <select onChange={function(e:React.ChangeEvent<HTMLSelectElement>){
       setEvent(e.target.value)
-    }}  className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    }}  className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "required>
     <option selected>Please Select</option>
     <option value="Ceremony & Reception">Ceremony & Reception</option>
     <option value="Ceremony Only">Ceremony Only</option>
@@ -119,6 +136,10 @@ async function handleSubmit(e:React.FormEvent){
  
   <label className=" text-gray-800 font-bold text-base">Additional Information</label>
   <textarea 
+
+      onChange={function(e:React.ChangeEvent<HTMLTextAreaElement>){
+        setAdditional(e.target.value)
+      }}
       rows={5} 
       placeholder="E.g. Vegetarian Requests" 
       className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500 placeholder-gray-400 bg-white" 
